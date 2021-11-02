@@ -2,7 +2,7 @@
 <html dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Math Master Website</title>
+    <title>Bread</title>
     <link rel="stylesheet" href="math.css">
   </head>
   <body>
@@ -16,7 +16,7 @@
       <div class="tallas">
         <div class="scri1" id="pan1">
 <div class="disp">
-  <input type="address" value="" placeholder="0" id="trada">
+  <input type="number" value="" placeholder="0" id="trada">
 </div>
           <div class="botss">
             <div class="ols">
@@ -57,11 +57,30 @@
       </div>
     </div>
     </div>
+    <div class="dina">
+      <header>
+        <h1>Boxes</h1>
+      </header>
+      <p>This is the box #1</p>
+      <p>Love</p>
+    </div>
     <script type="text/javascript"> var lolo, resi, op1, op2;
     var di = 1;
 var p = document.getElementById('trada');
 var reg = document.getElementById('reg');
 var relo = document.getElementById('talla2');
+
+document.addEventListener("keypress", myFunction);
+function myFunction() {
+  var x = event.which || event.keyCode;
+  var y = event.key;
+  if(x >= 48 && x<=57){
+    boti(y);
+  }
+  if(x==13){
+    solv();
+  }
+}
 
 function dela(){
   var gea = document.getElementById('trada').value;
