@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+}
+.mina{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #104f5b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mina header{
+  position: relative;
+  text-align: center;
+  margin-top: 12px;
+  z-index: 1;
+}
+.fond{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity:0.47;
+  z-index: 0;
+}
+.miLina{
+  width: 70%;
+  height: 70%;
+  position: relative;
+  border: 2px solid black;
+  box-shadow: 7;
+  border-radius: 17px;
+  margin: auto;
+  overflow: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.tallas{
+  display: flex;
+  flex-direction: row;
+}
+.scri1{
+ width: 70%;
+ height: 63.7vh;
+ background-color: grey;
+ display: flex;
+ flex-direction: column;
+ padding: 7px;
+ border-radius: 12px;
+}
+.disp{
+  background-color: black;
+  height: 15%;
+  margin: 3px;
+}
+.botss{
+  background-color: orange;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ton{
+  width: 25%;
+  position: relative;
+}
+.ols{
+  width: 100%;
+  display: flex;
+}
+.oks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: green;
+  height: 100%;
+}
+.ton2{
+  width: 100%;
+  height: 93.5%;
+}
+.ojk{
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#trada{
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: right;
+  color: green;
+  font-size: 1.7em;
+}
+.scri2{
+  width: 70%;
+  height: 37vh;
+  position: relative;
+  background-color: #080d0e;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 3px;
+  margin-left: 4.7%;
+  padding: 3px;
+  color: green;
+border-radius: 17px;
+  font-size: 1.3em;
+  overflow-y: scroll;
+}
+.scri2 header{
+  width: 100%;
+  text-align: center;
+}
+.dina{
+  height: 100vh;
+  background-color: grey;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+::-webkit-scrollbar {
+  display: none;
+}
