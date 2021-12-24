@@ -2,187 +2,31 @@
 <html dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Math Master Tool</title>
-    <link rel="stylesheet" href="math.css">
-    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/pi.png" sizes="206x206"/>
+    <title>Music Jacohinde</title>
+    <link rel="stylesheet" href="musika.css">
   </head>
   <body>
-    <div class="mina">
-      <img src="natff.jpg" class="fond">
+      <img src="jacohinde.jpg" alt="foto Amadeo Jacohinde" class="fonnd">
       <header>
-        <h1>MathMaster Tool</h1> <br>
-      <h3>* Amadeo Jacohinde *</h3>
+        <h1>Mi Música</h1>
       </header>
-<div class="miLina">
-  <div class="tallas">
-    <div class="mennu">
-    <div class="mna" onclick="alo(0)">Calculadora</div>
-    <div class="mna" onclick="alo(1)">Porcentajes</div>
-    <div class="mna" onclick="alo(2)">Potencias</div>
-    <div class="mna" onclick="alo(3)">Fracciones</div>
-    <div class="mna" onclick="alo(4)">Estadística</div>
-  </div>
-    <div class="scri1" id="pan1">
-      <div class="disp">
-       <input type="text" value="" step="0.01" placeholder="0" id="trada">
-      </div>
-      <div class="botss">
-            <div class="ols">
-            <button type="button" class="ton" onclick="opio(1)"><h2>+</h2> </button>
-            <button type="button" class="ton" onclick="opio(2)"><h2>-</h2></button>
-            <button type="button" class="ton" onclick="opio(3)"><h2>*</h2></button>
-            <button type="button" class="ton" onclick="opio(4)"><h2>%</h2></button>
-          </div>
-            <div class="oks">
-              <div class="ojk">
-              <button onclick="boti(1)">1</button>
-              <button onclick="boti(2)">2</button>
-              <button onclick="boti(3)">3</button>
-              <button onclick="boti(4)">4</button>
-              <button onclick="boti(5)">5</button>
-              <button onclick="boti(6)">6</button>
-              <button onclick="boti(7)">7</button>
-              <button onclick="boti(8)">8</button>
-              <button onclick="boti(9)">9</button>
-              <button onclick="boto()">.</button>
-              <button onclick="boti(0)">0</button>
-              <button onclick="limp()">AC</button>
-            </div>
-            <div style="background-color:grey;width:30%;">
-              <button type="button" style="width:100%;min-height:6.7%" onclick="dela()"> &#8592; </button>
-            <button type="button" class="ton2" id="iga" onclick="solv()"><h2>=</h2> </button>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="scri2" >
-            <div class="klin" onclick="limpreg()">Limpiar</div>
-          <header id="talla2">
-            <h3><u>Registro de Operaciones</u></h3><br>
-            <p id="reg"></p>
-          </header>
-
-        </div>
-      </div>
+      <div class="mina">
+      <p>Rap 1.3.A Master Version</p>
+      <audio controls>
+<source src="Rap1.mp3" type="audio/mpeg">
+      </audio>
+      <p>Napoleónica</p>
+      <audio controls>
+<source src="Napoleonica.mp3" type="audio/mpeg">
+      </audio>
+      <p>Socrática</p>
+      <audio controls>
+<source src="Socratica.mp3" type="audio/mpeg">
+      </audio>
+      <p>Egyptos</p>
+      <audio controls>
+<source src="Egyptos.mp3" type="audio/mpeg">
+      </audio>
     </div>
-    </div>
-    <a style="display: none" href="https://icons8.com/icon/13492/pi">Pi icon by Icons8</a>
-    <script type="text/javascript"> var lolo, resi, op1, op2;
-var dho = 0;     
-var di = 1;
-var p = document.getElementById('trada');
-var reg = document.getElementById('reg');
-var relo = document.getElementById('talla2');
-
-document.addEventListener("keydown", myFunction);
-function myFunction() {
-  var x = event.which || event.keyCode;
-  var y = event.key;
-  if(x==110||x==190){
-      boto();
-  }
-  if(x==8){
-      dela();
-  }
-  if(x >= 48 && x<=57||x >= 96 && x<=105){
-    boti(y);
-  }
-  if(x==13){
-    solv();
-  }
-}
-
-function dela(){
-  var gea = document.getElementById('trada').value;
-  document.getElementById('trada').value = gea.substring(-1, gea.length-1);
-}
-function opio(v){
-        var gea = document.getElementById('trada').value;
-        lolo = v;
-        p.value = "";
-        var fe = document.createElement("P");
-        switch (v) {
-          case 1:
-            p.placeholder = " + ";
-            reg.innerHTML = gea + " + ";
-            break;
-          case 2:
-              p.placeholder = " - ";
-              reg.innerHTML = gea + " - ";
-              break;
-          case 3:
-                p.placeholder = " * ";
-                reg.innerHTML = gea + " * ";
-                break;
-          case 4:
-                  p.placeholder = " / ";
-                  reg.innerHTML = gea + " / ";
-                  break;
-        }
-        op1 = gea;
-        gea.onclick;
-      }
-function boti(e){
-  document.getElementById('trada').value+= e;
-}
-function boto(){
-    let dot = document.getElementById('trada').value;
-    if(!dot.includes(".")){
-    document.getElementById('trada').value += ".";
-  }
-}
-function limp(){
-  document.getElementById('trada').value= "";
-  p.placeholder="0";
-}
-function limpreg(){
-  di = 1;
-  document.getElementById("talla2").innerHTML= "<h3><u>Registro de Operaciones</u></h3><br>";
-}
-function solv(){
-   var tea = document.getElementById('trada').value;
-   op2 = Number(tea);
-   op1 = Number(op1);
-   p.value = "";
-   p.placeholder= "0";
-   reg.innerHTML = "";
-   var fe = document.createElement("P");
-        switch (lolo) {
-          case 1:
-            resi = (op1 + op2);
-            fe.innerHTML= di +") "+ op1 + " + " + op2 + " = " + resi;
-            document.getElementById('talla2').appendChild(fe);
-            di++;
-            break;
-          case 2:
-          resi = (op1 - op2);
-          fe.innerHTML= di +") "+ op1 + " - " + op2 + " = " + resi;
-          document.getElementById('talla2').appendChild(fe);
-          di++;
-              break;
-          case 3:
-          resi = (op1 * op2);
-          fe.innerHTML= di +") "+ op1 + " * " + op2 + " = " + resi;
-          document.getElementById('talla2').appendChild(fe);
-          di++;
-                break;
-          case 4:
-          resi = (op1 / op2);
-          fe.innerHTML= di +") "+ op1 + " / " + op2 + " = " + resi;
-          document.getElementById('talla2').appendChild(fe);
-          di++;
-                  break;
-        }
-      }
-function alo(b){
-  var fol = document.getElementsByClassName("mennu");
-  var gp = document.getElementsByClassName("mna");
-  for(var i = 0;i<gp.length;i++){
-    gp[i].style.background = "none";
-  }
-  gp[b].style.background = "blueviolet";
-}
-window.addEventListener("load", alo(0));
-    </script>
   </body>
 </html>
